@@ -9,7 +9,9 @@ RUN set -ex; \
 		make \
 	; \
 	gem install travis ; \
-	apk del .build-deps
+	apk del .build-deps; \
+	apk update ; \
+	apk add git
 
 # Location where travis config stored
 ENV TRAVIS_CONFIG_PATH /travis
