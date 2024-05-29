@@ -1,6 +1,6 @@
 # https://github.com/travis-ci/travis.rb#installation
 
-FROM ruby:2-alpine
+FROM ruby:3.1-alpine
 
 RUN set -ex; \
 	apk add --no-cache --virtual .build-deps \
